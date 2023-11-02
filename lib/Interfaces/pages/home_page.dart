@@ -14,12 +14,22 @@ class HomePage extends ConsumerWidget {
     final reversedTodoList = List<TodoModelSing>.from(todoList.reversed);
 
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 0),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: <Color>[
+              Color(0xFF25243c),
+              Color(0xFF25243c),
+            ],
+          ),
+        ),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              //TodosActionPart(),
               RegisterPart(todoList: reversedTodoList),
             ],
           ),
@@ -28,3 +38,29 @@ class HomePage extends ConsumerWidget {
     );
   }
 }
+
+
+
+// class HomePage extends ConsumerWidget {
+//   const HomePage({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context, WidgetRef ref) {
+//     final todoList = ref.watch(todoNotifierProvider.select((state) => state.todoList));
+//     final reversedTodoList = List<TodoModelSing>.from(todoList.reversed);
+
+//     return Scaffold(
+//       body: Padding(
+//         padding: const EdgeInsets.only(top: 20),
+//         child: SingleChildScrollView(
+//           child: Column(
+//             children: [
+//               //TodosActionPart(),
+//               RegisterPart(todoList: reversedTodoList),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }

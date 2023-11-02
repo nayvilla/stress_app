@@ -7,7 +7,7 @@ Widget customTextField(String labelText, String hintText, int maxLength, {bool o
     child: Container(
       width: customWidth,
       constraints: const BoxConstraints(
-        maxWidth: 800,
+        maxWidth: double.infinity,
       ),
       child: TextField(
         controller: controller,
@@ -16,18 +16,21 @@ Widget customTextField(String labelText, String hintText, int maxLength, {bool o
         onChanged: onChanged,
         decoration: InputDecoration(
           labelText: labelText,
+          labelStyle: const TextStyle(color: Color.fromARGB(255, 245, 242, 242)),
           hintText: hintText,
+          hintStyle: const TextStyle(color: Color.fromARGB(255, 196, 189, 196)),
           floatingLabelBehavior: FloatingLabelBehavior.always,
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(color: Color.fromRGBO(119, 163, 243, 1)),
+            borderRadius: BorderRadius.circular(30),
+            borderSide: const BorderSide(color: Color(0xFFde455f)),
           ),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(color: Color.fromRGBO(119, 163, 243, 1)),
+            borderRadius: BorderRadius.circular(30),
+            borderSide: const BorderSide(color: Color(0xFFde455f)),
           ),
-          contentPadding: const EdgeInsets.symmetric(vertical: 20, horizontal: 12),
+          //contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 12),
         ),
+        style: const TextStyle(color: Color.fromARGB(255, 196, 189, 196)), 
       ),
     ),
   );

@@ -26,7 +26,7 @@ mixin _$TodoModelSing {
   String get city => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
   String get age => throw _privateConstructorUsedError;
-  bool get isTodoCompleted => throw _privateConstructorUsedError;
+  String get isTodoCompleted => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $TodoModelSingCopyWith<TodoModelSing> get copyWith =>
@@ -49,7 +49,7 @@ abstract class $TodoModelSingCopyWith<$Res> {
       String city,
       String email,
       String age,
-      bool isTodoCompleted});
+      String isTodoCompleted});
 }
 
 /// @nodoc
@@ -116,7 +116,7 @@ class _$TodoModelSingCopyWithImpl<$Res, $Val extends TodoModelSing>
       isTodoCompleted: null == isTodoCompleted
           ? _value.isTodoCompleted
           : isTodoCompleted // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as String,
     ) as $Val);
   }
 }
@@ -139,7 +139,7 @@ abstract class _$$TodoModelSingImplCopyWith<$Res>
       String city,
       String email,
       String age,
-      bool isTodoCompleted});
+      String isTodoCompleted});
 }
 
 /// @nodoc
@@ -204,7 +204,7 @@ class __$$TodoModelSingImplCopyWithImpl<$Res>
       isTodoCompleted: null == isTodoCompleted
           ? _value.isTodoCompleted
           : isTodoCompleted // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as String,
     ));
   }
 }
@@ -245,7 +245,7 @@ class _$TodoModelSingImpl extends _TodoModelSing {
   @override
   final String age;
   @override
-  final bool isTodoCompleted;
+  final String isTodoCompleted;
 
   @override
   String toString() {
@@ -297,7 +297,7 @@ abstract class _TodoModelSing extends TodoModelSing {
       required final String city,
       required final String email,
       required final String age,
-      required final bool isTodoCompleted}) = _$TodoModelSingImpl;
+      required final String isTodoCompleted}) = _$TodoModelSingImpl;
   const _TodoModelSing._() : super._();
 
   @override // ignore: non_constant_identifier_names
@@ -319,7 +319,7 @@ abstract class _TodoModelSing extends TodoModelSing {
   @override
   String get age;
   @override
-  bool get isTodoCompleted;
+  String get isTodoCompleted;
   @override
   @JsonKey(ignore: true)
   _$$TodoModelSingImplCopyWith<_$TodoModelSingImpl> get copyWith =>

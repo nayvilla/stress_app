@@ -18,56 +18,62 @@ class TodoNotifier extends StateNotifier<TodoState> {
       // Cambia el nombre de usuario en el estado
       todoUsernameChanged: (todoUsernameChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: todoUsernameChangedEvent.text.trimLeft(), fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: todoUsernameChangedEvent.text.trimLeft(), fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
           ),
         );
       },
       // Cambia el nombre completo en el estado
       todoFullnameChanged: (todoFullnameChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: todoFullnameChangedEvent.text.trimLeft(), password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: todoFullnameChangedEvent.text.trimLeft(), password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
           ),
       );
       }, 
       // Cambia la clave en el estado
       todoPasswordChanged: (todoPasswordChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: todoPasswordChangedEvent.text.trimLeft(), country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: todoPasswordChangedEvent.text.trimLeft(), country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
           ),
       );
       }, 
       // Cambia el edad en el estado
       todoAgeChanged: (todoAgeChangedEvent) { 
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: todoAgeChangedEvent.text.trimLeft(), isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: todoAgeChangedEvent.text.trimLeft(), isTodoCompleted: state.todo.isTodoCompleted, 
           ),
       );
       },
       // Cambia el pais en el estado
       todoCountryChanged: (todoCountryChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: todoCountryChangedEvent.text.trimLeft(), province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: todoCountryChangedEvent.text.trimLeft(), province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
           ),
         );
       },
       // Cambia la provincia en el estado
       todoProvinceChanged: (todoProvinceChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: todoProvinceChangedEvent.text.trimLeft(), city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: todoProvinceChangedEvent.text.trimLeft(), city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
           ),
       );
       },
       // Cambia la ciudad en el estado
       todoCityChanged: (todoCityChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: todoCityChangedEvent.text.trimLeft(), email: state.todo.email, age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: todoCityChangedEvent.text.trimLeft(), email: state.todo.email, age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
           ),
       );
       },  
       // Cambia el email en el estado
       todoEmailChanged: (todoEmailChangedEvent) {
         state = state.copyWith(
-          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: todoEmailChangedEvent.text.trimLeft(), age: state.todo.age, isTodoCompleted: false, 
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: todoEmailChangedEvent.text.trimLeft(), age: state.todo.age, isTodoCompleted: state.todo.isTodoCompleted, 
+          ),
+      );
+      },
+      todoCheckboxChanged: (todoCheckboxChangedEvent) {
+        state = state.copyWith(
+          todo: TodoModelSing( id_usuario: state.todo.id_usuario, username: state.todo.username, fullname: state.todo.fullname, password: state.todo.password, country: state.todo.country, province: state.todo.province, city: state.todo.city, email: state.todo.email, age: state.todo.age, isTodoCompleted: todoCheckboxChangedEvent.text.trimLeft(), 
           ),
       );
       },
@@ -86,7 +92,7 @@ class TodoNotifier extends StateNotifier<TodoState> {
             city: state.todo.city,
             email: state.todo.email,
             age: state.todo.age,
-            isTodoCompleted: false, // Inicializa como no completada
+            isTodoCompleted: state.todo.isTodoCompleted, // Inicializa como no completada
           ),
         );
         state = state.copyWith(todoList: todoList); // Actualiza el estado con la nueva lista de tareas

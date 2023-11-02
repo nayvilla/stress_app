@@ -26,6 +26,7 @@ mixin _$SingupEvent {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -39,6 +40,7 @@ mixin _$SingupEvent {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -52,6 +54,7 @@ mixin _$SingupEvent {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) =>
@@ -66,6 +69,7 @@ mixin _$SingupEvent {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -79,6 +83,7 @@ mixin _$SingupEvent {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -92,6 +97,7 @@ mixin _$SingupEvent {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) =>
@@ -189,6 +195,7 @@ class _$TodoUsernameChangedImpl implements TodoUsernameChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoUsernameChanged(text);
@@ -205,6 +212,7 @@ class _$TodoUsernameChangedImpl implements TodoUsernameChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoUsernameChanged?.call(text);
@@ -221,6 +229,7 @@ class _$TodoUsernameChangedImpl implements TodoUsernameChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -241,6 +250,7 @@ class _$TodoUsernameChangedImpl implements TodoUsernameChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoUsernameChanged(this);
@@ -257,6 +267,7 @@ class _$TodoUsernameChangedImpl implements TodoUsernameChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoUsernameChanged?.call(this);
@@ -273,6 +284,7 @@ class _$TodoUsernameChangedImpl implements TodoUsernameChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -366,6 +378,7 @@ class _$TodoFullnameChangedImpl implements TodoFullnameChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoFullnameChanged(text);
@@ -382,6 +395,7 @@ class _$TodoFullnameChangedImpl implements TodoFullnameChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoFullnameChanged?.call(text);
@@ -398,6 +412,7 @@ class _$TodoFullnameChangedImpl implements TodoFullnameChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -418,6 +433,7 @@ class _$TodoFullnameChangedImpl implements TodoFullnameChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoFullnameChanged(this);
@@ -434,6 +450,7 @@ class _$TodoFullnameChangedImpl implements TodoFullnameChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoFullnameChanged?.call(this);
@@ -450,6 +467,7 @@ class _$TodoFullnameChangedImpl implements TodoFullnameChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -543,6 +561,7 @@ class _$TodoAgeChangedImpl implements TodoAgeChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoAgeChanged(text);
@@ -559,6 +578,7 @@ class _$TodoAgeChangedImpl implements TodoAgeChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoAgeChanged?.call(text);
@@ -575,6 +595,7 @@ class _$TodoAgeChangedImpl implements TodoAgeChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -595,6 +616,7 @@ class _$TodoAgeChangedImpl implements TodoAgeChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoAgeChanged(this);
@@ -611,6 +633,7 @@ class _$TodoAgeChangedImpl implements TodoAgeChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoAgeChanged?.call(this);
@@ -627,6 +650,7 @@ class _$TodoAgeChangedImpl implements TodoAgeChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -720,6 +744,7 @@ class _$TodoCountryChangedImpl implements TodoCountryChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoCountryChanged(text);
@@ -736,6 +761,7 @@ class _$TodoCountryChangedImpl implements TodoCountryChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoCountryChanged?.call(text);
@@ -752,6 +778,7 @@ class _$TodoCountryChangedImpl implements TodoCountryChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -772,6 +799,7 @@ class _$TodoCountryChangedImpl implements TodoCountryChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoCountryChanged(this);
@@ -788,6 +816,7 @@ class _$TodoCountryChangedImpl implements TodoCountryChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoCountryChanged?.call(this);
@@ -804,6 +833,7 @@ class _$TodoCountryChangedImpl implements TodoCountryChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -897,6 +927,7 @@ class _$TodoProvinceChangedImpl implements TodoProvinceChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoProvinceChanged(text);
@@ -913,6 +944,7 @@ class _$TodoProvinceChangedImpl implements TodoProvinceChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoProvinceChanged?.call(text);
@@ -929,6 +961,7 @@ class _$TodoProvinceChangedImpl implements TodoProvinceChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -949,6 +982,7 @@ class _$TodoProvinceChangedImpl implements TodoProvinceChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoProvinceChanged(this);
@@ -965,6 +999,7 @@ class _$TodoProvinceChangedImpl implements TodoProvinceChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoProvinceChanged?.call(this);
@@ -981,6 +1016,7 @@ class _$TodoProvinceChangedImpl implements TodoProvinceChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1074,6 +1110,7 @@ class _$TodoCityChangedImpl implements TodoCityChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoCityChanged(text);
@@ -1090,6 +1127,7 @@ class _$TodoCityChangedImpl implements TodoCityChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoCityChanged?.call(text);
@@ -1106,6 +1144,7 @@ class _$TodoCityChangedImpl implements TodoCityChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1126,6 +1165,7 @@ class _$TodoCityChangedImpl implements TodoCityChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoCityChanged(this);
@@ -1142,6 +1182,7 @@ class _$TodoCityChangedImpl implements TodoCityChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoCityChanged?.call(this);
@@ -1158,6 +1199,7 @@ class _$TodoCityChangedImpl implements TodoCityChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1251,6 +1293,7 @@ class _$TodoEmailChangedImpl implements TodoEmailChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoEmailChanged(text);
@@ -1267,6 +1310,7 @@ class _$TodoEmailChangedImpl implements TodoEmailChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoEmailChanged?.call(text);
@@ -1283,6 +1327,7 @@ class _$TodoEmailChangedImpl implements TodoEmailChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1303,6 +1348,7 @@ class _$TodoEmailChangedImpl implements TodoEmailChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoEmailChanged(this);
@@ -1319,6 +1365,7 @@ class _$TodoEmailChangedImpl implements TodoEmailChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoEmailChanged?.call(this);
@@ -1335,6 +1382,7 @@ class _$TodoEmailChangedImpl implements TodoEmailChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1428,6 +1476,7 @@ class _$TodoPasswordChangedImpl implements TodoPasswordChanged {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return todoPasswordChanged(text);
@@ -1444,6 +1493,7 @@ class _$TodoPasswordChangedImpl implements TodoPasswordChanged {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return todoPasswordChanged?.call(text);
@@ -1460,6 +1510,7 @@ class _$TodoPasswordChangedImpl implements TodoPasswordChanged {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1480,6 +1531,7 @@ class _$TodoPasswordChangedImpl implements TodoPasswordChanged {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return todoPasswordChanged(this);
@@ -1496,6 +1548,7 @@ class _$TodoPasswordChangedImpl implements TodoPasswordChanged {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return todoPasswordChanged?.call(this);
@@ -1512,6 +1565,7 @@ class _$TodoPasswordChangedImpl implements TodoPasswordChanged {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1529,6 +1583,189 @@ abstract class TodoPasswordChanged implements SingupEvent {
   String get text;
   @JsonKey(ignore: true)
   _$$TodoPasswordChangedImplCopyWith<_$TodoPasswordChangedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$TodoCheckboxChangedImplCopyWith<$Res> {
+  factory _$$TodoCheckboxChangedImplCopyWith(_$TodoCheckboxChangedImpl value,
+          $Res Function(_$TodoCheckboxChangedImpl) then) =
+      __$$TodoCheckboxChangedImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String text});
+}
+
+/// @nodoc
+class __$$TodoCheckboxChangedImplCopyWithImpl<$Res>
+    extends _$SingupEventCopyWithImpl<$Res, _$TodoCheckboxChangedImpl>
+    implements _$$TodoCheckboxChangedImplCopyWith<$Res> {
+  __$$TodoCheckboxChangedImplCopyWithImpl(_$TodoCheckboxChangedImpl _value,
+      $Res Function(_$TodoCheckboxChangedImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? text = null,
+  }) {
+    return _then(_$TodoCheckboxChangedImpl(
+      text: null == text
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$TodoCheckboxChangedImpl implements TodoCheckboxChanged {
+  const _$TodoCheckboxChangedImpl({required this.text});
+
+  @override
+  final String text;
+
+  @override
+  String toString() {
+    return 'SingupEvent.todoCheckboxChanged(text: $text)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$TodoCheckboxChangedImpl &&
+            (identical(other.text, text) || other.text == text));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, text);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$TodoCheckboxChangedImplCopyWith<_$TodoCheckboxChangedImpl> get copyWith =>
+      __$$TodoCheckboxChangedImplCopyWithImpl<_$TodoCheckboxChangedImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String text) todoUsernameChanged,
+    required TResult Function(String text) todoFullnameChanged,
+    required TResult Function(String text) todoAgeChanged,
+    required TResult Function(String text) todoCountryChanged,
+    required TResult Function(String text) todoProvinceChanged,
+    required TResult Function(String text) todoCityChanged,
+    required TResult Function(String text) todoEmailChanged,
+    required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
+    required TResult Function() addTodo,
+  }) {
+    return todoCheckboxChanged(text);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String text)? todoUsernameChanged,
+    TResult? Function(String text)? todoFullnameChanged,
+    TResult? Function(String text)? todoAgeChanged,
+    TResult? Function(String text)? todoCountryChanged,
+    TResult? Function(String text)? todoProvinceChanged,
+    TResult? Function(String text)? todoCityChanged,
+    TResult? Function(String text)? todoEmailChanged,
+    TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
+    TResult? Function()? addTodo,
+  }) {
+    return todoCheckboxChanged?.call(text);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String text)? todoUsernameChanged,
+    TResult Function(String text)? todoFullnameChanged,
+    TResult Function(String text)? todoAgeChanged,
+    TResult Function(String text)? todoCountryChanged,
+    TResult Function(String text)? todoProvinceChanged,
+    TResult Function(String text)? todoCityChanged,
+    TResult Function(String text)? todoEmailChanged,
+    TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
+    TResult Function()? addTodo,
+    required TResult orElse(),
+  }) {
+    if (todoCheckboxChanged != null) {
+      return todoCheckboxChanged(text);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(TodoUsernameChanged value) todoUsernameChanged,
+    required TResult Function(TodoFullnameChanged value) todoFullnameChanged,
+    required TResult Function(TodoAgeChanged value) todoAgeChanged,
+    required TResult Function(TodoCountryChanged value) todoCountryChanged,
+    required TResult Function(TodoProvinceChanged value) todoProvinceChanged,
+    required TResult Function(TodoCityChanged value) todoCityChanged,
+    required TResult Function(TodoEmailChanged value) todoEmailChanged,
+    required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
+    required TResult Function(AddTodo value) addTodo,
+  }) {
+    return todoCheckboxChanged(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(TodoUsernameChanged value)? todoUsernameChanged,
+    TResult? Function(TodoFullnameChanged value)? todoFullnameChanged,
+    TResult? Function(TodoAgeChanged value)? todoAgeChanged,
+    TResult? Function(TodoCountryChanged value)? todoCountryChanged,
+    TResult? Function(TodoProvinceChanged value)? todoProvinceChanged,
+    TResult? Function(TodoCityChanged value)? todoCityChanged,
+    TResult? Function(TodoEmailChanged value)? todoEmailChanged,
+    TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
+    TResult? Function(AddTodo value)? addTodo,
+  }) {
+    return todoCheckboxChanged?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(TodoUsernameChanged value)? todoUsernameChanged,
+    TResult Function(TodoFullnameChanged value)? todoFullnameChanged,
+    TResult Function(TodoAgeChanged value)? todoAgeChanged,
+    TResult Function(TodoCountryChanged value)? todoCountryChanged,
+    TResult Function(TodoProvinceChanged value)? todoProvinceChanged,
+    TResult Function(TodoCityChanged value)? todoCityChanged,
+    TResult Function(TodoEmailChanged value)? todoEmailChanged,
+    TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
+    TResult Function(AddTodo value)? addTodo,
+    required TResult orElse(),
+  }) {
+    if (todoCheckboxChanged != null) {
+      return todoCheckboxChanged(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class TodoCheckboxChanged implements SingupEvent {
+  const factory TodoCheckboxChanged({required final String text}) =
+      _$TodoCheckboxChangedImpl;
+
+  String get text;
+  @JsonKey(ignore: true)
+  _$$TodoCheckboxChangedImplCopyWith<_$TodoCheckboxChangedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1578,6 +1815,7 @@ class _$AddTodoImpl implements AddTodo {
     required TResult Function(String text) todoCityChanged,
     required TResult Function(String text) todoEmailChanged,
     required TResult Function(String text) todoPasswordChanged,
+    required TResult Function(String text) todoCheckboxChanged,
     required TResult Function() addTodo,
   }) {
     return addTodo();
@@ -1594,6 +1832,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult? Function(String text)? todoCityChanged,
     TResult? Function(String text)? todoEmailChanged,
     TResult? Function(String text)? todoPasswordChanged,
+    TResult? Function(String text)? todoCheckboxChanged,
     TResult? Function()? addTodo,
   }) {
     return addTodo?.call();
@@ -1610,6 +1849,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult Function(String text)? todoCityChanged,
     TResult Function(String text)? todoEmailChanged,
     TResult Function(String text)? todoPasswordChanged,
+    TResult Function(String text)? todoCheckboxChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1630,6 +1870,7 @@ class _$AddTodoImpl implements AddTodo {
     required TResult Function(TodoCityChanged value) todoCityChanged,
     required TResult Function(TodoEmailChanged value) todoEmailChanged,
     required TResult Function(TodoPasswordChanged value) todoPasswordChanged,
+    required TResult Function(TodoCheckboxChanged value) todoCheckboxChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return addTodo(this);
@@ -1646,6 +1887,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult? Function(TodoCityChanged value)? todoCityChanged,
     TResult? Function(TodoEmailChanged value)? todoEmailChanged,
     TResult? Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult? Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return addTodo?.call(this);
@@ -1662,6 +1904,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult Function(TodoCityChanged value)? todoCityChanged,
     TResult Function(TodoEmailChanged value)? todoEmailChanged,
     TResult Function(TodoPasswordChanged value)? todoPasswordChanged,
+    TResult Function(TodoCheckboxChanged value)? todoCheckboxChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {

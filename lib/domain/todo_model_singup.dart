@@ -18,7 +18,7 @@ class TodoModelSing with _$TodoModelSing {
     required String city,
     required String email,
     required String age,   
-    required bool isTodoCompleted,
+    required String isTodoCompleted,
     
   }) = _TodoModelSing;
 
@@ -34,6 +34,6 @@ class TodoModelSing with _$TodoModelSing {
         city:Constants.city,
         email: Constants.email,
         age: Constants.age,
-        isTodoCompleted: false,
+        isTodoCompleted: "false",
       );
 }
