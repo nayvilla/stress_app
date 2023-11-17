@@ -6,6 +6,7 @@ import 'package:app/provider/provider_singup.dart';
 import 'package:app/Interfaces/pages/widgets/custom/custom_text_field.dart';
 import 'package:app/Interfaces/pages/widgets/custom/custom_date_input.dart';
 import 'package:app/Interfaces/pages/constants/constants.dart';
+import 'package:app/Interfaces/pages/widgets/login.dart';
 //import 'package:app/Interfaces/pages/widgets/custom/custom_dropdown.dart';
 //import 'package:app/Interfaces/pages/widgets/login.dart';
 
@@ -212,6 +213,7 @@ class RegisterPart extends ConsumerWidget {
                       TextButton(
                         onPressed: () {
                           // Lógica para el botón "Inicio de Sesión"
+                          openMyForm(context);
                         },
                         child: const Text(
                           'Iniciar Sesión',
@@ -232,7 +234,16 @@ class RegisterPart extends ConsumerWidget {
   }
 }
 
-
+Future<Object> openMyForm(BuildContext context) async {
+  return showDialog(
+    context: context,
+    builder: (context) {
+      return AlertDialog(
+        content: LoginPart(todoList: []), // Pasa una lista vacía como argumento
+      );
+    },
+  ) ?? false;
+}
           // const Image(
           //   image: NetworkImage('https://avatars.githubusercontent.com/u/109951?s=400&v=4'),
           //   fit: BoxFit.cover,
