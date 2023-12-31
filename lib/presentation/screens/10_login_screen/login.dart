@@ -4,7 +4,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_app/presentation/providers/providers.dart';
+//import 'package:riverpod_app/presentation/providers/providers.dart';
 import 'package:riverpod_app/presentation/screens/custom_widgets/custom_widgets.dart';
 import 'package:riverpod_app/config/router/app_router.dart';
 import 'package:http/http.dart' as http;
@@ -20,9 +20,6 @@ class LoginScreen extends ConsumerWidget {
   
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // ignore: unused_local_variable
-    final helloWorld = ref.watch(holaMundoProvider);
-
     
     Future login() async{
       if (controllerUsername.text=="" || controllerPassword.text=="") {
@@ -34,7 +31,7 @@ class LoginScreen extends ConsumerWidget {
           );
       } else {
               
-        var url = Uri.parse('https://stressappshirleybd.000webhostapp.com/login.php');
+        var url = Uri.parse('https://shirleytesisbd.000webhostapp.com/login.php');
         var response = await http.post(url, body:{
             "nickname" : controllerUsername.text,
             "password" : controllerPassword.text, 

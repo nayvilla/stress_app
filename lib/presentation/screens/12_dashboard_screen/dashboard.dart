@@ -90,7 +90,7 @@ class DashboardScreen extends ConsumerWidget {
                         child: ElevatedButton(
                           onPressed: () {
                             // Lógica para el botón "Siguiente", ir formulario
-                            ref.read(appRouterProvider).go('/');
+                            ref.read(appRouterProvider).go('/form');
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFFde455f),
@@ -161,7 +161,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
   }
 
   Future<void> _updateChartDataGSRFromServer() async {
-    final response = await http.get(Uri.parse('https://stressappshirleybd.000webhostapp.com/gsr.php'));
+    final response = await http.get(Uri.parse('https://shirleytesisbd.000webhostapp.com/gsr.php'));
     
     if (response.statusCode == 200) {
       // Analiza la respuesta JSON del servidor PHP. Ajusta según el formato real de tus datos.
@@ -186,7 +186,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
   }
 
   Future<void> _updateChartDataEMGFromServer() async {
-    final response = await http.get(Uri.parse('https://stressappshirleybd.000webhostapp.com/emg.php'));
+    final response = await http.get(Uri.parse('https://shirleytesisbd.000webhostapp.com/emg.php'));
     
     if (response.statusCode == 200) {
       // Analiza la respuesta JSON del servidor PHP. Ajusta según el formato real de tus datos.

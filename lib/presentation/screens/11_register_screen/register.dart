@@ -2,7 +2,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_app/presentation/providers/providers.dart';
+//import 'package:riverpod_app/presentation/providers/providers.dart';
 import 'package:riverpod_app/presentation/screens/custom_widgets/custom_widgets.dart';
 import 'package:riverpod_app/config/helpers/Constants.dart';
 import 'package:riverpod_app/config/router/app_router.dart';
@@ -25,7 +25,7 @@ class RegisterScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
 
     // ignore: unused_local_variable
-    final helloWorld = ref.watch( holaMundoProvider );
+
     Future register() async{
       if (controllerName.text=="" || controllerLastname.text==""
           || controllerUsername.text=="" || controllerPassword.text==""
@@ -38,7 +38,7 @@ class RegisterScreen extends ConsumerWidget {
           );
       } else {
               
-        var url = Uri.parse('https://stressappshirleybd.000webhostapp.com/register.php');
+        var url = Uri.parse('https://shirleytesisbd.000webhostapp.com/register.php');
         var uuid = const Uuid();
         String nuevoUuid = uuid.v4();
         var response = await http.post(url, body:{

@@ -17,6 +17,6 @@ class Constants {
   static const String city = "Ambato";
   static const String email = "example@gmail.com";
   static String age = obtenerFechaActual();
-  static final List<String> estadoNivel = ['1', '2', '3','4', '5', '6','7', '8', '9','10'];
-  static final List<String> estadoPregunta = ['Siempre', 'Aveces', 'Nunca'];
+  static final List<String> opcionPregunta = ['0','1', '2', '3','4', '5'];
+  static const String estadoPreguntaInicial = '0';
 }

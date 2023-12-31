@@ -46,7 +46,7 @@ class _HomeScreenView extends StatelessWidget {
          _CustomListTile(
              title: 'Future Provider',
              subTitle: 'Mantener el estado de un future y su retorno',
-             location: '/Dashboard'),
+             location: '/form'),
 
         // _CustomListTile(
         //     title: 'Family Future Provider',
