@@ -14,6 +14,7 @@ class FormModel with _$FormModel {
     required String pregunta6,
     required String pregunta7,
     required String pregunta8,
+    required String resultado,
   }) = _FormModel;
 
   const FormModel._();
@@ -27,5 +28,6 @@ class FormModel with _$FormModel {
         pregunta6: "0",
         pregunta7: "0",
         pregunta8: "0",
+        resultado: "",
       ); 
 }

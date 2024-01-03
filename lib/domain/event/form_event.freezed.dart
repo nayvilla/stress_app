@@ -26,6 +26,7 @@ mixin _$FormEvent {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -39,6 +40,7 @@ mixin _$FormEvent {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -52,6 +54,7 @@ mixin _$FormEvent {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) =>
@@ -66,6 +69,7 @@ mixin _$FormEvent {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -79,6 +83,7 @@ mixin _$FormEvent {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) =>
       throw _privateConstructorUsedError;
@@ -92,6 +97,7 @@ mixin _$FormEvent {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) =>
@@ -189,6 +195,7 @@ class _$FormPregunta1ChangedImpl implements FormPregunta1Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta1Changed(text);
@@ -205,6 +212,7 @@ class _$FormPregunta1ChangedImpl implements FormPregunta1Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta1Changed?.call(text);
@@ -221,6 +229,7 @@ class _$FormPregunta1ChangedImpl implements FormPregunta1Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -241,6 +250,7 @@ class _$FormPregunta1ChangedImpl implements FormPregunta1Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta1Changed(this);
@@ -257,6 +267,7 @@ class _$FormPregunta1ChangedImpl implements FormPregunta1Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta1Changed?.call(this);
@@ -273,6 +284,7 @@ class _$FormPregunta1ChangedImpl implements FormPregunta1Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -367,6 +379,7 @@ class _$FormPregunta2ChangedImpl implements FormPregunta2Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta2Changed(text);
@@ -383,6 +396,7 @@ class _$FormPregunta2ChangedImpl implements FormPregunta2Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta2Changed?.call(text);
@@ -399,6 +413,7 @@ class _$FormPregunta2ChangedImpl implements FormPregunta2Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -419,6 +434,7 @@ class _$FormPregunta2ChangedImpl implements FormPregunta2Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta2Changed(this);
@@ -435,6 +451,7 @@ class _$FormPregunta2ChangedImpl implements FormPregunta2Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta2Changed?.call(this);
@@ -451,6 +468,7 @@ class _$FormPregunta2ChangedImpl implements FormPregunta2Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -545,6 +563,7 @@ class _$FormPregunta3ChangedImpl implements FormPregunta3Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta3Changed(text);
@@ -561,6 +580,7 @@ class _$FormPregunta3ChangedImpl implements FormPregunta3Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta3Changed?.call(text);
@@ -577,6 +597,7 @@ class _$FormPregunta3ChangedImpl implements FormPregunta3Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -597,6 +618,7 @@ class _$FormPregunta3ChangedImpl implements FormPregunta3Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta3Changed(this);
@@ -613,6 +635,7 @@ class _$FormPregunta3ChangedImpl implements FormPregunta3Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta3Changed?.call(this);
@@ -629,6 +652,7 @@ class _$FormPregunta3ChangedImpl implements FormPregunta3Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -723,6 +747,7 @@ class _$FormPregunta4ChangedImpl implements FormPregunta4Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta4Changed(text);
@@ -739,6 +764,7 @@ class _$FormPregunta4ChangedImpl implements FormPregunta4Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta4Changed?.call(text);
@@ -755,6 +781,7 @@ class _$FormPregunta4ChangedImpl implements FormPregunta4Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -775,6 +802,7 @@ class _$FormPregunta4ChangedImpl implements FormPregunta4Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta4Changed(this);
@@ -791,6 +819,7 @@ class _$FormPregunta4ChangedImpl implements FormPregunta4Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta4Changed?.call(this);
@@ -807,6 +836,7 @@ class _$FormPregunta4ChangedImpl implements FormPregunta4Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -901,6 +931,7 @@ class _$FormPregunta5ChangedImpl implements FormPregunta5Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta5Changed(text);
@@ -917,6 +948,7 @@ class _$FormPregunta5ChangedImpl implements FormPregunta5Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta5Changed?.call(text);
@@ -933,6 +965,7 @@ class _$FormPregunta5ChangedImpl implements FormPregunta5Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -953,6 +986,7 @@ class _$FormPregunta5ChangedImpl implements FormPregunta5Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta5Changed(this);
@@ -969,6 +1003,7 @@ class _$FormPregunta5ChangedImpl implements FormPregunta5Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta5Changed?.call(this);
@@ -985,6 +1020,7 @@ class _$FormPregunta5ChangedImpl implements FormPregunta5Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1079,6 +1115,7 @@ class _$FormPregunta6ChangedImpl implements FormPregunta6Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta6Changed(text);
@@ -1095,6 +1132,7 @@ class _$FormPregunta6ChangedImpl implements FormPregunta6Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta6Changed?.call(text);
@@ -1111,6 +1149,7 @@ class _$FormPregunta6ChangedImpl implements FormPregunta6Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1131,6 +1170,7 @@ class _$FormPregunta6ChangedImpl implements FormPregunta6Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta6Changed(this);
@@ -1147,6 +1187,7 @@ class _$FormPregunta6ChangedImpl implements FormPregunta6Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta6Changed?.call(this);
@@ -1163,6 +1204,7 @@ class _$FormPregunta6ChangedImpl implements FormPregunta6Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1257,6 +1299,7 @@ class _$FormPregunta7ChangedImpl implements FormPregunta7Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta7Changed(text);
@@ -1273,6 +1316,7 @@ class _$FormPregunta7ChangedImpl implements FormPregunta7Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta7Changed?.call(text);
@@ -1289,6 +1333,7 @@ class _$FormPregunta7ChangedImpl implements FormPregunta7Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1309,6 +1354,7 @@ class _$FormPregunta7ChangedImpl implements FormPregunta7Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta7Changed(this);
@@ -1325,6 +1371,7 @@ class _$FormPregunta7ChangedImpl implements FormPregunta7Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta7Changed?.call(this);
@@ -1341,6 +1388,7 @@ class _$FormPregunta7ChangedImpl implements FormPregunta7Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1435,6 +1483,7 @@ class _$FormPregunta8ChangedImpl implements FormPregunta8Changed {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return formPregunta8Changed(text);
@@ -1451,6 +1500,7 @@ class _$FormPregunta8ChangedImpl implements FormPregunta8Changed {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return formPregunta8Changed?.call(text);
@@ -1467,6 +1517,7 @@ class _$FormPregunta8ChangedImpl implements FormPregunta8Changed {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1487,6 +1538,7 @@ class _$FormPregunta8ChangedImpl implements FormPregunta8Changed {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return formPregunta8Changed(this);
@@ -1503,6 +1555,7 @@ class _$FormPregunta8ChangedImpl implements FormPregunta8Changed {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return formPregunta8Changed?.call(this);
@@ -1519,6 +1572,7 @@ class _$FormPregunta8ChangedImpl implements FormPregunta8Changed {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {
@@ -1536,6 +1590,190 @@ abstract class FormPregunta8Changed implements FormEvent {
   String get text;
   @JsonKey(ignore: true)
   _$$FormPregunta8ChangedImplCopyWith<_$FormPregunta8ChangedImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FormResultadoChangedImplCopyWith<$Res> {
+  factory _$$FormResultadoChangedImplCopyWith(_$FormResultadoChangedImpl value,
+          $Res Function(_$FormResultadoChangedImpl) then) =
+      __$$FormResultadoChangedImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String text});
+}
+
+/// @nodoc
+class __$$FormResultadoChangedImplCopyWithImpl<$Res>
+    extends _$FormEventCopyWithImpl<$Res, _$FormResultadoChangedImpl>
+    implements _$$FormResultadoChangedImplCopyWith<$Res> {
+  __$$FormResultadoChangedImplCopyWithImpl(_$FormResultadoChangedImpl _value,
+      $Res Function(_$FormResultadoChangedImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? text = null,
+  }) {
+    return _then(_$FormResultadoChangedImpl(
+      text: null == text
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FormResultadoChangedImpl implements FormResultadoChanged {
+  const _$FormResultadoChangedImpl({required this.text});
+
+  @override
+  final String text;
+
+  @override
+  String toString() {
+    return 'FormEvent.formResultadoChanged(text: $text)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FormResultadoChangedImpl &&
+            (identical(other.text, text) || other.text == text));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, text);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FormResultadoChangedImplCopyWith<_$FormResultadoChangedImpl>
+      get copyWith =>
+          __$$FormResultadoChangedImplCopyWithImpl<_$FormResultadoChangedImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String text) formPregunta1Changed,
+    required TResult Function(String text) formPregunta2Changed,
+    required TResult Function(String text) formPregunta3Changed,
+    required TResult Function(String text) formPregunta4Changed,
+    required TResult Function(String text) formPregunta5Changed,
+    required TResult Function(String text) formPregunta6Changed,
+    required TResult Function(String text) formPregunta7Changed,
+    required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
+    required TResult Function() addTodo,
+  }) {
+    return formResultadoChanged(text);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String text)? formPregunta1Changed,
+    TResult? Function(String text)? formPregunta2Changed,
+    TResult? Function(String text)? formPregunta3Changed,
+    TResult? Function(String text)? formPregunta4Changed,
+    TResult? Function(String text)? formPregunta5Changed,
+    TResult? Function(String text)? formPregunta6Changed,
+    TResult? Function(String text)? formPregunta7Changed,
+    TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
+    TResult? Function()? addTodo,
+  }) {
+    return formResultadoChanged?.call(text);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String text)? formPregunta1Changed,
+    TResult Function(String text)? formPregunta2Changed,
+    TResult Function(String text)? formPregunta3Changed,
+    TResult Function(String text)? formPregunta4Changed,
+    TResult Function(String text)? formPregunta5Changed,
+    TResult Function(String text)? formPregunta6Changed,
+    TResult Function(String text)? formPregunta7Changed,
+    TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
+    TResult Function()? addTodo,
+    required TResult orElse(),
+  }) {
+    if (formResultadoChanged != null) {
+      return formResultadoChanged(text);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(FormPregunta1Changed value) formPregunta1Changed,
+    required TResult Function(FormPregunta2Changed value) formPregunta2Changed,
+    required TResult Function(FormPregunta3Changed value) formPregunta3Changed,
+    required TResult Function(FormPregunta4Changed value) formPregunta4Changed,
+    required TResult Function(FormPregunta5Changed value) formPregunta5Changed,
+    required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
+    required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
+    required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
+    required TResult Function(AddTodo value) addTodo,
+  }) {
+    return formResultadoChanged(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FormPregunta1Changed value)? formPregunta1Changed,
+    TResult? Function(FormPregunta2Changed value)? formPregunta2Changed,
+    TResult? Function(FormPregunta3Changed value)? formPregunta3Changed,
+    TResult? Function(FormPregunta4Changed value)? formPregunta4Changed,
+    TResult? Function(FormPregunta5Changed value)? formPregunta5Changed,
+    TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
+    TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
+    TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
+    TResult? Function(AddTodo value)? addTodo,
+  }) {
+    return formResultadoChanged?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(FormPregunta1Changed value)? formPregunta1Changed,
+    TResult Function(FormPregunta2Changed value)? formPregunta2Changed,
+    TResult Function(FormPregunta3Changed value)? formPregunta3Changed,
+    TResult Function(FormPregunta4Changed value)? formPregunta4Changed,
+    TResult Function(FormPregunta5Changed value)? formPregunta5Changed,
+    TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
+    TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
+    TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
+    TResult Function(AddTodo value)? addTodo,
+    required TResult orElse(),
+  }) {
+    if (formResultadoChanged != null) {
+      return formResultadoChanged(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FormResultadoChanged implements FormEvent {
+  const factory FormResultadoChanged({required final String text}) =
+      _$FormResultadoChangedImpl;
+
+  String get text;
+  @JsonKey(ignore: true)
+  _$$FormResultadoChangedImplCopyWith<_$FormResultadoChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -1585,6 +1823,7 @@ class _$AddTodoImpl implements AddTodo {
     required TResult Function(String text) formPregunta6Changed,
     required TResult Function(String text) formPregunta7Changed,
     required TResult Function(String text) formPregunta8Changed,
+    required TResult Function(String text) formResultadoChanged,
     required TResult Function() addTodo,
   }) {
     return addTodo();
@@ -1601,6 +1840,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult? Function(String text)? formPregunta6Changed,
     TResult? Function(String text)? formPregunta7Changed,
     TResult? Function(String text)? formPregunta8Changed,
+    TResult? Function(String text)? formResultadoChanged,
     TResult? Function()? addTodo,
   }) {
     return addTodo?.call();
@@ -1617,6 +1857,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult Function(String text)? formPregunta6Changed,
     TResult Function(String text)? formPregunta7Changed,
     TResult Function(String text)? formPregunta8Changed,
+    TResult Function(String text)? formResultadoChanged,
     TResult Function()? addTodo,
     required TResult orElse(),
   }) {
@@ -1637,6 +1878,7 @@ class _$AddTodoImpl implements AddTodo {
     required TResult Function(FormPregunta6Changed value) formPregunta6Changed,
     required TResult Function(FormPregunta7Changed value) formPregunta7Changed,
     required TResult Function(FormPregunta8Changed value) formPregunta8Changed,
+    required TResult Function(FormResultadoChanged value) formResultadoChanged,
     required TResult Function(AddTodo value) addTodo,
   }) {
     return addTodo(this);
@@ -1653,6 +1895,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult? Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult? Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult? Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult? Function(FormResultadoChanged value)? formResultadoChanged,
     TResult? Function(AddTodo value)? addTodo,
   }) {
     return addTodo?.call(this);
@@ -1669,6 +1912,7 @@ class _$AddTodoImpl implements AddTodo {
     TResult Function(FormPregunta6Changed value)? formPregunta6Changed,
     TResult Function(FormPregunta7Changed value)? formPregunta7Changed,
     TResult Function(FormPregunta8Changed value)? formPregunta8Changed,
+    TResult Function(FormResultadoChanged value)? formResultadoChanged,
     TResult Function(AddTodo value)? addTodo,
     required TResult orElse(),
   }) {

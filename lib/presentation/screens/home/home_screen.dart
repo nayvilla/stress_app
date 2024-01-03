@@ -23,52 +23,10 @@ class _HomeScreenView extends StatelessWidget {
     return ListView(
       children: const [
 
-        // _CustomListTile(
-        //     title: 'Provider Simple',
-        //     subTitle: 'Un provider de sólo lectura',
-        //     location: '/provider'),
-
-        // _CustomListTile(
-        //     title: 'Provider + Go_Router',
-        //     subTitle: 'Un uso aplicado',
-        //     location: '/provider-router'),
-
-        _CustomListTile(
-             title: 'Apariencia',
-             subTitle: 'Cambia la aprienia de la app',
-             location: '/state-provider'),
-
-        // _CustomListTile(
-        //     title: 'State Provider + Provider',
-        //     subTitle: 'TODO - Una mezcla entre providers',
-        //     location: '/todo'),
-
          _CustomListTile(
              title: 'Future Provider',
              subTitle: 'Mantener el estado de un future y su retorno',
-             location: '/form'),
-
-        // _CustomListTile(
-        //     title: 'Family Future Provider',
-        //     subTitle: 'Providers con argumentos',
-        //     location: '/future-family-provider'),
-
-
-        // _CustomListTile(
-        //     title: 'Stream Provider',
-        //     subTitle: 'Mantener el estado de un Stream y sus emosiones',
-        //     location: '/stream-provider'),
-
-
-        // _CustomListTile(
-        //     title: 'State Notifier Provider',
-        //     subTitle: 'Provider con notificación automática',
-        //     location: '/state-notifier-provider'),
-
-        // _CustomListTile(
-        //     title: 'Change Notifier Provider',
-        //     subTitle: 'Provider con control de notificación a listeners',
-        //     location: '/change-notifier-provider'),
+             location: '/result'),
 
         _CustomListTile(
             title: 'Inicio de Sesión',

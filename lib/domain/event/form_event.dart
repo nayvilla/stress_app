@@ -14,5 +14,6 @@ class FormEvent with _$FormEvent {
   const factory FormEvent.formPregunta6Changed({required String text}) = FormPregunta6Changed;
   const factory FormEvent.formPregunta7Changed({required String text}) = FormPregunta7Changed;
   const factory FormEvent.formPregunta8Changed({required String text}) = FormPregunta8Changed;
+  const factory FormEvent.formResultadoChanged({required String text}) = FormResultadoChanged; 
   const factory FormEvent.addTodo() = AddTodo;
 }

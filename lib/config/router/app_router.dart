@@ -23,11 +23,15 @@ GoRouter appRouter(AppRouterRef ref) {
     ),
     GoRoute(
       path: '/dashboard',
-      builder: (context, state) => DashboardScreen(),
+      builder: (context, state) => const DashboardScreen(),
     ),
     GoRoute(
       path: '/form',
-      builder: (context, state) => FormScreen(),
+      builder: (context, state) => const FormScreen(),
+    ),
+    GoRoute(
+      path: '/result',
+      builder: (context, state) => const ResultScreen(),
     ),
   ]);
 }

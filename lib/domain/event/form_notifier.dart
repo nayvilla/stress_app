@@ -26,6 +26,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6,  
             pregunta7: state.form.pregunta7,  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -42,6 +43,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6,  
             pregunta7: state.form.pregunta7,  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -58,6 +60,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6,  
             pregunta7: state.form.pregunta7,  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -74,6 +77,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6,  
             pregunta7: state.form.pregunta7,  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -90,6 +94,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6,  
             pregunta7: state.form.pregunta7,  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -106,6 +111,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: formPregunta6ChangedEvent.text.trimLeft(), 
             pregunta7: state.form.pregunta7,  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -122,6 +128,7 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6, 
             pregunta7: formPregunta7ChangedEvent.text.trimLeft(),  
             pregunta8: state.form.pregunta8, 
+            resultado: state.form.resultado, 
           ),
         );
       },
@@ -138,6 +145,23 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta6: state.form.pregunta6, 
             pregunta7: state.form.pregunta7,  
             pregunta8: formPregunta8ChangedEvent.text.trimLeft(), 
+            resultado: state.form.resultado, 
+          ),
+        );
+      },
+
+      formResultadoChanged: (formResultadoChangedEvent) {
+        state = state.copyWith(
+          form: FormModel( 
+            pregunta1: state.form.pregunta1,
+            pregunta2: state.form.pregunta2,  
+            pregunta3: state.form.pregunta3,
+            pregunta4: state.form.pregunta4, 
+            pregunta5: state.form.pregunta5,
+            pregunta6: state.form.pregunta6, 
+            pregunta7: state.form.pregunta7,  
+            pregunta8: state.form.pregunta8,
+            resultado: formResultadoChangedEvent.text.trimLeft(),  
           ),
         );
       },
@@ -154,7 +178,8 @@ class FormNotifier extends StateNotifier<FormState> {
             pregunta5: state.form.pregunta5,
             pregunta6: state.form.pregunta6, 
             pregunta7: state.form.pregunta7,
-            pregunta8: state.form.pregunta8, 
+            pregunta8: state.form.pregunta8,
+            resultado: state.form.resultado, 
           ),
         );
         state = state.copyWith(formList: formList); // Actualiza el estado con la nueva lista de tareas

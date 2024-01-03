@@ -24,6 +24,7 @@ mixin _$FormModel {
   String get pregunta6 => throw _privateConstructorUsedError;
   String get pregunta7 => throw _privateConstructorUsedError;
   String get pregunta8 => throw _privateConstructorUsedError;
+  String get resultado => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $FormModelCopyWith<FormModel> get copyWith =>
@@ -43,7 +44,8 @@ abstract class $FormModelCopyWith<$Res> {
       String pregunta5,
       String pregunta6,
       String pregunta7,
-      String pregunta8});
+      String pregunta8,
+      String resultado});
 }
 
 /// @nodoc
@@ -67,6 +69,7 @@ class _$FormModelCopyWithImpl<$Res, $Val extends FormModel>
     Object? pregunta6 = null,
     Object? pregunta7 = null,
     Object? pregunta8 = null,
+    Object? resultado = null,
   }) {
     return _then(_value.copyWith(
       pregunta1: null == pregunta1
@@ -101,6 +104,10 @@ class _$FormModelCopyWithImpl<$Res, $Val extends FormModel>
           ? _value.pregunta8
           : pregunta8 // ignore: cast_nullable_to_non_nullable
               as String,
+      resultado: null == resultado
+          ? _value.resultado
+          : resultado // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -121,7 +128,8 @@ abstract class _$$FormModelImplCopyWith<$Res>
       String pregunta5,
       String pregunta6,
       String pregunta7,
-      String pregunta8});
+      String pregunta8,
+      String resultado});
 }
 
 /// @nodoc
@@ -143,6 +151,7 @@ class __$$FormModelImplCopyWithImpl<$Res>
     Object? pregunta6 = null,
     Object? pregunta7 = null,
     Object? pregunta8 = null,
+    Object? resultado = null,
   }) {
     return _then(_$FormModelImpl(
       pregunta1: null == pregunta1
@@ -177,6 +186,10 @@ class __$$FormModelImplCopyWithImpl<$Res>
           ? _value.pregunta8
           : pregunta8 // ignore: cast_nullable_to_non_nullable
               as String,
+      resultado: null == resultado
+          ? _value.resultado
+          : resultado // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -192,7 +205,8 @@ class _$FormModelImpl extends _FormModel {
       required this.pregunta5,
       required this.pregunta6,
       required this.pregunta7,
-      required this.pregunta8})
+      required this.pregunta8,
+      required this.resultado})
       : super._();
 
   @override
@@ -211,10 +225,12 @@ class _$FormModelImpl extends _FormModel {
   final String pregunta7;
   @override
   final String pregunta8;
+  @override
+  final String resultado;
 
   @override
   String toString() {
-    return 'FormModel(pregunta1: $pregunta1, pregunta2: $pregunta2, pregunta3: $pregunta3, pregunta4: $pregunta4, pregunta5: $pregunta5, pregunta6: $pregunta6, pregunta7: $pregunta7, pregunta8: $pregunta8)';
+    return 'FormModel(pregunta1: $pregunta1, pregunta2: $pregunta2, pregunta3: $pregunta3, pregunta4: $pregunta4, pregunta5: $pregunta5, pregunta6: $pregunta6, pregunta7: $pregunta7, pregunta8: $pregunta8, resultado: $resultado)';
   }
 
   @override
@@ -237,12 +253,14 @@ class _$FormModelImpl extends _FormModel {
             (identical(other.pregunta7, pregunta7) ||
                 other.pregunta7 == pregunta7) &&
             (identical(other.pregunta8, pregunta8) ||
-                other.pregunta8 == pregunta8));
+                other.pregunta8 == pregunta8) &&
+            (identical(other.resultado, resultado) ||
+                other.resultado == resultado));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, pregunta1, pregunta2, pregunta3,
-      pregunta4, pregunta5, pregunta6, pregunta7, pregunta8);
+      pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, resultado);
 
   @JsonKey(ignore: true)
   @override
@@ -260,7 +278,8 @@ abstract class _FormModel extends FormModel {
       required final String pregunta5,
       required final String pregunta6,
       required final String pregunta7,
-      required final String pregunta8}) = _$FormModelImpl;
+      required final String pregunta8,
+      required final String resultado}) = _$FormModelImpl;
   const _FormModel._() : super._();
 
   @override
@@ -279,6 +298,8 @@ abstract class _FormModel extends FormModel {
   String get pregunta7;
   @override
   String get pregunta8;
+  @override
+  String get resultado;
   @override
   @JsonKey(ignore: true)
   _$$FormModelImplCopyWith<_$FormModelImpl> get copyWith =>

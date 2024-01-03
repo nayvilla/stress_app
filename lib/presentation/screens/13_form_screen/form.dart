@@ -44,7 +44,7 @@ class FormScreen extends ConsumerWidget {
           });
           var data = json.decode(response.body);
           if (data == "Success"){
-            ref.read(appRouterProvider).go('/login');
+            ref.read(appRouterProvider).go('/result');
           } else{
             Fluttertoast.showToast(
               msg: "Error al registrar sus respuestas",
@@ -267,7 +267,7 @@ class FormScreen extends ConsumerWidget {
                             // Lógica para el botón "Formulario"
                             ref.read(formNotifierProvider.notifier).mapEventsToState( const AddTodo() );
                             formulario();
-                            print('Seleccion preguntas: $selectedEstadoP1, $selectedEstadoP2, $selectedEstadoP3, $selectedEstadoP4, $selectedEstadoP5, $selectedEstadoP6, $selectedEstadoP7, $selectedEstadoP8');
+                            //print('Seleccion preguntas: $selectedEstadoP1, $selectedEstadoP2, $selectedEstadoP3, $selectedEstadoP4, $selectedEstadoP5, $selectedEstadoP6, $selectedEstadoP7, $selectedEstadoP8');
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFFde455f),
