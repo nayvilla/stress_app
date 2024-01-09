@@ -11,7 +11,7 @@ class ResultadoEstres {
     try {
       final response = await dio.get('https://api-shirley.onrender.com');
 
-      return response.data['resultado'] ?? 'Comprube su conexión a Internet';
+      return response.data['resultado'] ?? 'Compruebe su conexión a Internet';
 
     } catch (e) {
       return 'Porfavor compruebe su conexión a internet';

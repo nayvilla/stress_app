@@ -8,7 +8,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Stress App'),
+        title: const Text('Stress App',
+            style: TextStyle(
+            fontWeight: FontWeight.bold,
+        ),
+        ),
+        centerTitle: true,
       ),
       body: const _HomeScreenView(),
     );
@@ -23,10 +28,20 @@ class _HomeScreenView extends StatelessWidget {
     return ListView(
       children: const [
 
-         _CustomListTile(
-             title: 'Future Provider',
-             subTitle: 'Mantener el estado de un future y su retorno',
-             location: '/result'),
+        //  _CustomListTile(
+        //      title: 'Future Provider',
+        //      subTitle: 'Mantener el estado de un future y su retorno',
+        //      location: '/result'),
+        Padding(padding: EdgeInsets.all(17),
+        child: Text(
+            "Detecta tu nivel de estrés a través de señales electrofisiológicas.",
+            style: TextStyle(
+              fontSize: 17,
+              color: Color.fromARGB(255, 21, 93, 74),
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.center,
+        ),),
 
         _CustomListTile(
             title: 'Inicio de Sesión',

@@ -78,13 +78,15 @@ class FormScreen extends ConsumerWidget {
               children: [
                 const SizedBox(height: 20),
                 const Padding(
-                  padding: EdgeInsets.only(left: 15),
+                  padding: EdgeInsets.only(left: 15, right: 15),
                   child: Text(
-                    "Con la idea de obtener mayor precisión, por favor llena el formulario, donde (1) es poco y (5) mucho.",
+                    "Responde el siguiente formulario asignando un valor, donde (1) es poco y (5) mucho según como te afecte cada parámetro, en base a tu nivel de estrés.",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 17,
+                      color: Color.fromARGB(255, 21, 93, 74),
                       fontWeight: FontWeight.bold,
                     ),
+                    textAlign: TextAlign.justify,
                   ),
                 ),
                 const SizedBox(height: 30),
@@ -95,7 +97,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          'Señala tu nivel de estres',
+                          '¿Cómo describes tu nivel actual de estrés?',
                           Constants.opcionPregunta,
                           selectedEstadoP1,
                           (String? value) {
@@ -116,7 +118,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Cuál es de estres por la sobrecarga de tarea?',
+                          '¿Cuanto estrés sientes por la sobrecarga de tareas?',
                           Constants.opcionPregunta,
                           selectedEstadoP2,
                           (String? value) {
@@ -137,7 +139,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Con que frecuencia te estresa las evaluaciones?',
+                          '¿Cuanto te estresan las evaluaciones?',
                           Constants.opcionPregunta,
                           selectedEstadoP3,
                           (String? value) {
@@ -158,7 +160,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Cuánto te estresa el trabajo que te asignan en la Universidad?',
+                          '¿Cuanto te estresa el tipo de trabajo asignado?',
                           Constants.opcionPregunta,
                           selectedEstadoP4,
                           (String? value) {
@@ -179,7 +181,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Te estresa tener plazos ajustados para tareas académicas?',
+                          '¿Cuanto te estresa el límite de tiempo para tareas?',
                           Constants.opcionPregunta,
                           selectedEstadoP5,
                           (String? value) {
@@ -200,7 +202,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Experimentas fatiga crónica cuando estás estresado?',
+                          '¿Con que frecuencia sientes fatiga crónica?',
                           Constants.opcionPregunta,
                           selectedEstadoP6,
                           (String? value) {
@@ -221,7 +223,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Cuánto te cuesta concentrarte cuando estás estresado?',
+                          '¿Con que frecuencia tienes problemas de concentración?',
                           Constants.opcionPregunta,
                           selectedEstadoP7,
                           (String? value) {
@@ -242,7 +244,7 @@ class FormScreen extends ConsumerWidget {
                       child: SizedBox(
                         height: 100,
                         child: customDropdown(
-                          '¿Sientes desgano al hacer tareas escolares cuando estás estresado?',
+                          '¿Con que frecuencia sientes desgano?',
                           Constants.opcionPregunta,
                           selectedEstadoP8,
                           (String? value) {

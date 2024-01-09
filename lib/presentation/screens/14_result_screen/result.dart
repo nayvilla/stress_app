@@ -2,13 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:riverpod_app/domain/event/event.dart';
+//import 'package:http/http.dart' as http;
+//import 'dart:convert';
+//import 'package:fluttertoast/fluttertoast.dart';
+//import 'package:riverpod_app/domain/event/event.dart';
 import 'package:riverpod_app/presentation/providers/providers.dart';
 import 'package:riverpod_app/config/router/app_router.dart';
-import 'package:dio/dio.dart';
+//import 'package:dio/dio.dart';
 
 
 class ResultScreen extends ConsumerWidget {
@@ -86,7 +86,7 @@ class ResultScreen extends ConsumerWidget {
                 const SizedBox(height: 30),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 15),
+                  padding: const EdgeInsets.only(left: 15, right: 15),
                   child: Container(
                     width: 380, // Puedes ajustar el tamaño según tus necesidades
                     height: 100, // Puedes ajustar el tamaño según tus necesidades
@@ -97,7 +97,7 @@ class ResultScreen extends ConsumerWidget {
                     child: Center(
                       child: resultadoAsync.when(
                         data: (resultado) => Text(resultado), 
-                        error: ( _, __ ) => const Text('No se pudo cargar el nombre'), 
+                        error: ( _, __ ) => const Text('Revisa tu conexión a internet.'), 
                         loading: () => const CircularProgressIndicator(),
                       )                    
                     ),
@@ -150,7 +150,7 @@ class ResultScreen extends ConsumerWidget {
               const Padding(
                   padding: EdgeInsets.only(left: 15),
                   child: Text(
-                    "Tratamiento",
+                    "Consejos para tu bienestar",
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -184,7 +184,7 @@ class ResultScreen extends ConsumerWidget {
                             child: Text(
                               'Bajo',
                               style: TextStyle(
-                                fontSize: 14,
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromARGB(255, 19, 13, 13),
                               ),
@@ -217,7 +217,7 @@ class ResultScreen extends ConsumerWidget {
                             child: Text(
                               'Moderado',
                               style: TextStyle(
-                                fontSize: 14,
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromARGB(255, 19, 13, 13),
                               ),
@@ -250,7 +250,7 @@ class ResultScreen extends ConsumerWidget {
                             child: Text(
                               'Alto',
                               style: TextStyle(
-                                fontSize: 14,
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromARGB(255, 19, 13, 13),
                               ),

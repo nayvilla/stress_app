@@ -166,7 +166,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
     if (response.statusCode == 200) {
       // Analiza la respuesta JSON del servidor PHP. Ajusta según el formato real de tus datos.
       final List<dynamic> jsonData = json.decode(response.body);
-      await Future.delayed(const Duration(seconds: 2));
+      //await Future.delayed(const Duration(seconds: 2));
       if (mounted) {
       setState(() {
         chartDataGSR.add(ChartData(x: DateTime.now().second.toString(), y: double.parse(jsonData.last['GSR'])));
@@ -191,7 +191,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
     if (response.statusCode == 200) {
       // Analiza la respuesta JSON del servidor PHP. Ajusta según el formato real de tus datos.
       final List<dynamic> jsonData = json.decode(response.body);
-      await Future.delayed(const Duration(seconds: 2));
+      //await Future.delayed(const Duration(seconds: 2));
       if (mounted) {
       setState(() {
         chartDataEMG.add(ChartData(x: DateTime.now().second.toString(), y: double.parse(jsonData.last['EMG'])));
