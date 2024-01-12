@@ -84,7 +84,7 @@ class DashboardScreen extends ConsumerWidget {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(15),
+                      padding: const EdgeInsets.all(13),
                       child: SizedBox(
                         height: 50,
                         child: ElevatedButton(
@@ -93,7 +93,7 @@ class DashboardScreen extends ConsumerWidget {
                             ref.read(appRouterProvider).go('/form');
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFde455f),
+                            backgroundColor: Colors.redAccent,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -255,7 +255,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                           spreadRadius: 1,
                           blurRadius: 0,
                           offset: Offset(0, 2),
@@ -290,7 +290,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                           spreadRadius: 1,
                           blurRadius: 0,
                           offset: Offset(0, 2),
@@ -325,7 +325,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                           spreadRadius: 1,
                           blurRadius: 0,
                           offset: Offset(0, 2),
@@ -411,7 +411,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                           spreadRadius: 1,
                           blurRadius: 0,
                           offset: Offset(0, 2),
@@ -446,7 +446,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                           spreadRadius: 1,
                           blurRadius: 0,
                           offset: Offset(0, 2),
@@ -481,7 +481,7 @@ class _RealTimeChartState extends State<RealTimeChart> {
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                           spreadRadius: 1,
                           blurRadius: 0,
                           offset: Offset(0, 2),

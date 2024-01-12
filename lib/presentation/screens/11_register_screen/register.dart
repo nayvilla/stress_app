@@ -257,7 +257,7 @@ class RegisterScreen extends ConsumerWidget {
                             register();
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFde455f),
+                            backgroundColor: Colors.redAccent,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -302,7 +302,7 @@ class RegisterScreen extends ConsumerWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                         ),
                       ),
                     ),

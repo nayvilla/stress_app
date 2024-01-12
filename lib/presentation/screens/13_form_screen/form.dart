@@ -272,7 +272,7 @@ class FormScreen extends ConsumerWidget {
                             //print('Seleccion preguntas: $selectedEstadoP1, $selectedEstadoP2, $selectedEstadoP3, $selectedEstadoP4, $selectedEstadoP5, $selectedEstadoP6, $selectedEstadoP7, $selectedEstadoP8');
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFde455f),
+                            backgroundColor: Colors.redAccent,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),

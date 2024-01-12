@@ -4,6 +4,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_app/presentation/providers/result_provider.dart';
 //import 'package:riverpod_app/presentation/providers/providers.dart';
 import 'package:riverpod_app/presentation/screens/custom_widgets/custom_widgets.dart';
 import 'package:riverpod_app/config/router/app_router.dart';
@@ -12,7 +13,7 @@ import 'package:fluttertoast/fluttertoast.dart';
  
 // ignore: must_be_immutable
 class LoginScreen extends ConsumerWidget {
-  TextEditingController controllerUsername = TextEditingController();
+  //TextEditingController controllerUsername = TextEditingController();
   TextEditingController controllerPassword = TextEditingController();
   bool isChecked = true;
  
@@ -20,7 +21,7 @@ class LoginScreen extends ConsumerWidget {
   
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    
+    final TextEditingController controllerUsername = ref.read(usernameControllerProvider);
     Future login() async{
       if (controllerUsername.text=="" || controllerPassword.text=="") {
         Fluttertoast.showToast(
@@ -170,7 +171,7 @@ class LoginScreen extends ConsumerWidget {
                             login();
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFde455f),
+                            backgroundColor: Colors.redAccent,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -215,7 +216,7 @@ class LoginScreen extends ConsumerWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFFde455f),
+                          color: Colors.redAccent,
                         ),
                       ),
                     ),

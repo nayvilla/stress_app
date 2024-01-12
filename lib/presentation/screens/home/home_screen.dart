@@ -55,7 +55,11 @@ class _HomeScreenView extends StatelessWidget {
         Image(
              image: NetworkImage('https://github.com/nayvilla/stress_app/blob/v2Registro/stress-removebg.png?raw=true'),
              fit: BoxFit.cover,
-           ),          
+           ),  
+        // _CustomListTile(
+        //      title: 'Reporte',
+        //      subTitle: 'Ventana pruebas reporte',
+        //      location: '/report'),           
       ],
     );
   }

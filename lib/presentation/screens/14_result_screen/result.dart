@@ -2,54 +2,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-//import 'package:http/http.dart' as http;
-//import 'dart:convert';
-//import 'package:fluttertoast/fluttertoast.dart';
-//import 'package:riverpod_app/domain/event/event.dart';
 import 'package:riverpod_app/presentation/providers/providers.dart';
 import 'package:riverpod_app/config/router/app_router.dart';
-//import 'package:dio/dio.dart';
+import 'package:riverpod_app/config/config.dart';
 
 
 class ResultScreen extends ConsumerWidget {
 
-  const ResultScreen({super.key});
+  ResultScreen({super.key});
+  final InsertarResultadoMetodo _InsertarResultadoMetodo = InsertarResultadoMetodo();
+  final LoginViewError _mensajeError = LoginViewError();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    //String apiResponse = '';
 
-    // Future<void> result() async {
-    //   final dio = Dio();
-    //   try {
-    //     final response = await dio.get('https://api-shirley.onrender.com');
-    //     //var url = Uri.parse('https://api-shirley.onrender.com');
-
-    //     //var response = await http.get(url);
-    //     //apiResponse = response.body;
-    //     apiResponse= response.data['resultado'] ?? 'Comprube su conexión a Internet';
-
-    //     // Imprimir la respuesta del API
-    //     print('Respuesta del API: $apiResponse');
-
-    //     //var data = json.decode(response.body);
-    //     //if (data == "Success") {
-    //     //  ref.read(appRouterProvider).go('/login');
-
-
-    //    // } 
-    //   } catch (error) {
-    //     // Manejar errores aquí
-    //     print('Error al realizar la solicitud GET: $error');
-    //     Fluttertoast.showToast(
-    //       msg: "Por favor, revise su conexión a Internet.",
-    //       toastLength: Toast.LENGTH_SHORT,
-    //       gravity: ToastGravity.CENTER,
-    //       fontSize: 16.0,
-    //     );
-    //   }
-    // }
-    //final pokemonAsync = ref.watch( pokemonNameProvider );
     final resultadoAsync = ref.watch( resultadoestresProvider );
 
     return Scaffold(
@@ -90,13 +56,27 @@ class ResultScreen extends ConsumerWidget {
                   child: Container(
                     width: 380, // Puedes ajustar el tamaño según tus necesidades
                     height: 100, // Puedes ajustar el tamaño según tus necesidades
+                    //padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 17),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 37, 227, 176),
-                      borderRadius: BorderRadius.circular(20), // Ajusta el radio según tus preferencias
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: const Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
                     ),
                     child: Center(
                       child: resultadoAsync.when(
-                        data: (resultado) => Text(resultado), 
+                        data: (resultado) => Text(resultado,
+                                style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),), 
                         error: ( _, __ ) => const Text('Revisa tu conexión a internet.'), 
                         loading: () => const CircularProgressIndicator(),
                       )                    
@@ -115,15 +95,16 @@ class ResultScreen extends ConsumerWidget {
                         height: 50,
                         child: ElevatedButton(
                           onPressed: () async {
-                            // Lógica para el botón "Mostrar Resultado"
-                            //await result();
-                            //ref.read(formNotifierProvider.notifier).mapEventsToState(FormResultadoChanged(text: apiResponse));
                             ref.read(resultestresProvider.notifier).update((state) => state + 1);
-                            
-                            
+                            await _InsertarResultadoMetodo.postResultado(
+                              context,
+                              ref,
+                            );
+                            // ignore: use_build_context_synchronously
+                            _mensajeError.alertError(context, 'Carga de datos', 'Tus datos se han cargado correctammente');
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFde455f),
+                            backgroundColor: Colors.redAccent,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -165,29 +146,38 @@ class ResultScreen extends ConsumerWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(left: 15),
-                      child: SizedBox(
-                        height: 120,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white, // Cambia el color de fondo según tus necesidades
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
                         child: ElevatedButton(
                           onPressed: () {
-                            // Lógica para el botón "Bajo"
+                            // Lógica para el botón "Alto"
                             screenTratamientoBajo(context);
-                            
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(255, 37, 227, 176),
+                            padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 50),
+                            primary: Colors.transparent, // Fondo transparente
+                            elevation: 0, // Sin sombra
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                           ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(15),
-                            child: Text(
-                              'Bajo',
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(255, 19, 13, 13),
-                              ),
+                          child: const Text(
+                            'Bajo',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromARGB(255, 19, 13, 13),
                             ),
                           ),
                         ),
@@ -197,30 +187,39 @@ class ResultScreen extends ConsumerWidget {
 
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(5),
-                      child: SizedBox(
-                        height: 120,
+                      padding: const EdgeInsets.only(left: 6, right: 6),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white, // Cambia el color de fondo según tus necesidades
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
                         child: ElevatedButton(
                           onPressed: () {
-                            // Lógica para el botón "Moderado"
+                            // Lógica para el botón "Alto"
                             screenTratamientoModerado(context);
-                            
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(255, 37, 227, 176),
+                            padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 50),
+                            primary: Colors.transparent, // Fondo transparente
+                            elevation: 0, // Sin sombra
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                           ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(5),
-                            child: Text(
-                              'Moderado',
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(255, 19, 13, 13),
-                              ),
+                          child: const Text(
+                            'Moderado',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromARGB(255, 19, 13, 13),
                             ),
                           ),
                         ),
@@ -231,35 +230,45 @@ class ResultScreen extends ConsumerWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(right: 15),
-                      child: SizedBox(
-                        height: 120,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white, // Cambia el color de fondo según tus necesidades
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
                         child: ElevatedButton(
                           onPressed: () {
                             // Lógica para el botón "Alto"
                             screenTratamientoAlto(context);
-                            
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(255, 37, 227, 176),
+                            padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 50),
+                            primary: Colors.transparent, // Fondo transparente
+                            elevation: 0, // Sin sombra
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                           ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(15),
-                            child: Text(
-                              'Alto',
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(255, 19, 13, 13),
-                              ),
+                          child: const Text(
+                            'Alto',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromARGB(255, 19, 13, 13),
                             ),
                           ),
                         ),
                       ),
                     ),
                   ),
+
                 ],
               ),
               const SizedBox(height: 20),
@@ -274,12 +283,11 @@ class ResultScreen extends ConsumerWidget {
                         height: 50,
                         child: ElevatedButton(
                           onPressed: () {
-                            // Lógica para el botón "Salir"
-                            ref.read(appRouterProvider).go('/');
-                            
+                            // Lógica para el botón "Reporte"
+                            ref.read(appRouterProvider).go('/report');                            
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFde455f),
+                            backgroundColor: Colors.redAccent,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             ),
@@ -287,7 +295,7 @@ class ResultScreen extends ConsumerWidget {
                           child: const Padding(
                             padding: EdgeInsets.all(15),
                             child: Text(
-                              'Salir',
+                              'Ver Reporte',
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -376,3 +384,45 @@ class ResultScreen extends ConsumerWidget {
       },
     );
   }
+
+  class InsertarResultadoMetodo {
+  // ignore: unused_field
+  final LoginViewError _mensajeError = LoginViewError();
+
+  // Función asincrónica para manejar el inicio de sesión
+  Future<void> postResultado(BuildContext context, WidgetRef ref,) async {
+    // Llamada al método de inicio de sesión
+    ref.watch( insertResultProvider);
+    final postResultadoApi = await ref.read(insertResultProvider.future);
+    //Mapeo de la respuesta del API
+    if (postResultadoApi.startsWith('Error')) {
+    // ignore: use_build_context_synchronously
+    _mensajeError.alertError(context, 'Error al cargar sus datos', postResultadoApi);
+    return;
+  }   
+  }
+}
+
+class LoginViewError {
+  // Función asincrónica para manejar el inicio de sesión
+       // ignore: unused_element
+      Future<void> alertError(BuildContext context, String title, String message) async {
+    return showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(title),
+          content: Text(message),
+          actions: <Widget>[
+            ElevatedButton(
+              child: const Text('Aceptar'),
+              onPressed: () => Navigator.of(context).pop(),
+            )
+          ],
+        );
+      },
+    );
+  }
+
+}

@@ -31,7 +31,11 @@ GoRouter appRouter(AppRouterRef ref) {
     ),
     GoRoute(
       path: '/result',
-      builder: (context, state) => const ResultScreen(),
+      builder: (context, state) => ResultScreen(),
+    ),
+    GoRoute(
+      path: '/report',
+      builder: (context, state) => ReportScreen(),
     ),
   ]);
 }
